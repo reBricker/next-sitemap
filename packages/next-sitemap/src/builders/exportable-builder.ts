@@ -47,7 +47,8 @@ export class ExportableBuilder {
     const sitemaps = [
       ...this.generatedSitemaps(),
       // Include additionalSitemaps provided via robots.txt options
-      ...(this.config?.robotsTxtOptions?.additionalSitemaps ?? []),
+      //Exclude it. will be in Robots.txt
+      //...(this.config?.robotsTxtOptions?.additionalSitemaps ?? []),
     ]
 
     // Generate sitemap-index content
