@@ -15,6 +15,7 @@
     ]
   },
   "scripts": {
+    "prepare": "turbo run deploy --force",
     "clean": "tsc --build --clean",
     "dev:test": "bun test --watch",
     "dev:tsc": "tsc --build --watch",
